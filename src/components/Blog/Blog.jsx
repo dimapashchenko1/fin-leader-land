@@ -4,22 +4,8 @@ function Blog() {
   return (
     <>
       <section className={css.blog} id="blog">
-        <picture className={css.blog__img}>
-          <source
-            type="image/jpeg"
-            srcSet={`${require('../../images/img/home/blog.jpg')} 1x, ${require('../../images/img/home/blog@2x.jpg')} 2x`}
-          />
-          <source
-            type="image/webp"
-            srcSet={`${require('../../images/img/home/blog.webp')} 1x, ${require('../../images/img/home/blog@2x.webp')} 2x`}
-          />
-          <img
-            src={require('../../images/img/home/blog.jpg')}
-            alt="blog"
-            loading="lazy"
-          />
-        </picture>
-        <div className={css.blog__info}>
+        <div className={css.blog__box}></div>
+        <div className={css.blog__wrapper}>
           <p className={css.blog__text}>April 16 2020</p>
           <h2 className={css.blog__title}>Blog Post One</h2>
           <p className={css.blog__desc}>

@@ -15,29 +15,13 @@ function Contact() {
   return (
     <>
       <section className={css.contact} id="contact">
-        <picture className={css.contact__img}>
-          <source
-            type="image/jpeg"
-            srcSet={`${require('../../images/img/home/contact.jpg')} 1x, ${require('../../images/img/home/contact@2x.jpg')} 2x`}
-          />
-          <source
-            type="image/webp"
-            srcSet={`${require('../../images/img/home/contact.webp')} 1x, ${require('../../images/img/home/contact@2x.webp')} 2x`}
-          />
-          <img
-            src={require('../../images/img/home/contact.jpg')}
-            alt="people"
-            loading="lazy"
-          />
-        </picture>
+        <div className={css.contact__box}></div>
         <div className={css.contact__info}>
           <h2 className={css.contact__title}>Request Callback</h2>
-        </div>
-        <div>
           <form
             className={css.form}
             name="contact"
-            netlify
+            netlify="true"
             onSubmit={handleSubmit(onSubmit)}
           >
             <div className={css.form__item}>
