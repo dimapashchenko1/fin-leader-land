@@ -21,18 +21,27 @@ function Cases() {
             sapiente!
           </p>
         </div>
-        <div className="App">
+        <div className={css.cases__gallery}>
           <LightGallery
             onInit={onInit}
             speed={500}
             plugins={[lgThumbnail, lgZoom]}
           >
-            <a href={require('../../images/img/home/blog.jpg')}>
-              <img alt="img1" src={require('../../images/img/home/blog.jpg')} />
-            </a>
-            <a href={require('../../images/img/home/people.jpg')}>
+            <a
+              className={css.cases__img}
+              href={require('../../images/img/home/blog.jpg')}
+            >
               <img
-                alt="img2"
+                alt="Lorem ipsum dolor sit amet consectetur adipisicing!"
+                src={require('../../images/img/home/blog.jpg')}
+              />
+            </a>
+            <a
+              className={css.cases__img}
+              href={require('../../images/img/home/people.jpg')}
+            >
+              <img
+                alt="Lorem ipsum dolor sit amet consectetur adipisicing!"
                 src={require('../../images/img/home/people.jpg')}
               />
             </a>
