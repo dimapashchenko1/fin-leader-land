@@ -21,30 +21,68 @@ function Cases() {
             sapiente!
           </p>
         </div>
-        <div className={css.cases__gallery}>
+        <div>
           <LightGallery
             onInit={onInit}
             speed={500}
             plugins={[lgThumbnail, lgZoom]}
           >
-            <a
-              className={css.cases__img}
-              href={require('../../images/img/home/blog.jpg')}
-            >
-              <img
-                alt="Lorem ipsum dolor sit amet consectetur adipisicing!"
-                src={require('../../images/img/home/blog.jpg')}
-              />
-            </a>
-            <a
-              className={css.cases__img}
-              href={require('../../images/img/home/people.jpg')}
-            >
-              <img
-                alt="Lorem ipsum dolor sit amet consectetur adipisicing!"
-                src={require('../../images/img/home/people.jpg')}
-              />
-            </a>
+            <div className={css.cases__gallery}>
+              <a
+                className={css.cases__img}
+                href={require('../../images/img/home/blog.jpg')}
+              >
+                <img
+                  alt="Lorem ipsum dolor sit amet consectetur adipisicing!"
+                  src={require('../../images/img/home/blog.jpg')}
+                />
+              </a>
+              <a
+                className={css.cases__img}
+                href={require('../../images/img/home/people.jpg')}
+              >
+                <img
+                  alt="Lorem ipsum dolor sit amet consectetur adipisicing!"
+                  src={require('../../images/img/home/people.jpg')}
+                />
+              </a>
+              <a
+                className={css.cases__img}
+                href={require('../../images/img/home/blog.jpg')}
+              >
+                <img
+                  alt="Lorem ipsum dolor sit amet consectetur adipisicing!"
+                  src={require('../../images/img/home/blog.jpg')}
+                />
+              </a>
+              <a
+                className={css.cases__img}
+                href={require('../../images/img/home/people.jpg')}
+              >
+                <img
+                  alt="Lorem ipsum dolor sit amet consectetur adipisicing!"
+                  src={require('../../images/img/home/people.jpg')}
+                />
+              </a>
+              <a
+                className={css.cases__img}
+                href={require('../../images/img/home/blog.jpg')}
+              >
+                <img
+                  alt="Lorem ipsum dolor sit amet consectetur adipisicing!"
+                  src={require('../../images/img/home/blog.jpg')}
+                />
+              </a>
+              <a
+                className={css.cases__img}
+                href={require('../../images/img/home/people.jpg')}
+              >
+                <img
+                  alt="Lorem ipsum dolor sit amet consectetur adipisicing!"
+                  src={require('../../images/img/home/people.jpg')}
+                />
+              </a>
+            </div>
           </LightGallery>
         </div>
       </section>
