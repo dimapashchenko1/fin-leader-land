@@ -15,7 +15,7 @@ function App() {
           <img
             src={preloader}
             alt="Preloader"
-            style={{ position: 'absolute', top: '50%', left: '50%' }}
+            style={{ position: 'absolute', top: '10%', left: '10%' }}
           />
         }
       >

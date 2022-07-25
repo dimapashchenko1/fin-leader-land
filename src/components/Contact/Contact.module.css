@@ -111,7 +111,10 @@
     }
 .contact__box {
     height: 354px;
-    width: 368px;
+    min-width: 368px;
+}
+.contact__info {
+    width: 1000px;
 }
 }
 
