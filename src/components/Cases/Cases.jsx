@@ -21,68 +21,115 @@ function Cases() {
             sapiente!
           </p>
         </div>
-        <div>
+        <div className={css.cases__gallery}>
           <LightGallery
             onInit={onInit}
+            elementClassNames={css.cases__grid}
             speed={500}
             plugins={[lgThumbnail, lgZoom]}
           >
-            <div className={css.cases__gallery}>
-              <a
-                className={css.cases__img}
-                href={require('../../images/img/home/blog.jpg')}
-              >
-                <img
-                  alt="Lorem ipsum dolor sit amet consectetur adipisicing!"
-                  src={require('../../images/img/home/blog.jpg')}
+            <a href={require('../../images/img/cases/cases1.jpg')}>
+              <picture className={css.cases__img}>
+                <source
+                  type="image/jpeg"
+                  srcSet={`${require('../../images/img/cases/cases1.jpg')} 1x, ${require('../../images/img/cases/cases1@2x.jpg')} 2x`}
                 />
-              </a>
-              <a
-                className={css.cases__img}
-                href={require('../../images/img/home/people.jpg')}
-              >
-                <img
-                  alt="Lorem ipsum dolor sit amet consectetur adipisicing!"
-                  src={require('../../images/img/home/people.jpg')}
+                <source
+                  type="image/webp"
+                  srcSet={`${require('../../images/img/cases/cases1.webp')} 1x, ${require('../../images/img/cases/cases1@2x.webp')} 2x`}
                 />
-              </a>
-              <a
-                className={css.cases__img}
-                href={require('../../images/img/home/blog.jpg')}
-              >
                 <img
-                  alt="Lorem ipsum dolor sit amet consectetur adipisicing!"
-                  src={require('../../images/img/home/blog.jpg')}
+                  src={require('../../images/img/cases/cases1.jpg')}
+                  alt="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                  loading="lazy"
                 />
-              </a>
-              <a
-                className={css.cases__img}
-                href={require('../../images/img/home/people.jpg')}
-              >
+              </picture>
+            </a>
+            <a href={require('../../images/img/cases/cases2.jpg')}>
+              <picture className={css.cases__img}>
+                <source
+                  type="image/jpeg"
+                  srcSet={`${require('../../images/img/cases/cases2.jpg')} 1x, ${require('../../images/img/cases/cases2@2x.jpg')} 2x`}
+                />
+                <source
+                  type="image/webp"
+                  srcSet={`${require('../../images/img/cases/cases2.webp')} 1x, ${require('../../images/img/cases/cases2@2x.webp')} 2x`}
+                />
                 <img
-                  alt="Lorem ipsum dolor sit amet consectetur adipisicing!"
-                  src={require('../../images/img/home/people.jpg')}
+                  src={require('../../images/img/cases/cases2.jpg')}
+                  alt="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                  loading="lazy"
                 />
-              </a>
-              <a
-                className={css.cases__img}
-                href={require('../../images/img/home/blog.jpg')}
-              >
+              </picture>
+            </a>
+            <a href={require('../../images/img/cases/cases3.jpg')}>
+              <picture className={css.cases__img}>
+                <source
+                  type="image/jpeg"
+                  srcSet={`${require('../../images/img/cases/cases3.jpg')} 1x, ${require('../../images/img/cases/cases3@2x.jpg')} 2x`}
+                />
+                <source
+                  type="image/webp"
+                  srcSet={`${require('../../images/img/cases/cases3.webp')} 1x, ${require('../../images/img/cases/cases3@2x.webp')} 2x`}
+                />
                 <img
-                  alt="Lorem ipsum dolor sit amet consectetur adipisicing!"
-                  src={require('../../images/img/home/blog.jpg')}
+                  src={require('../../images/img/cases/cases3.jpg')}
+                  alt="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                  loading="lazy"
                 />
-              </a>
-              <a
-                className={css.cases__img}
-                href={require('../../images/img/home/people.jpg')}
-              >
+              </picture>
+            </a>
+            <a href={require('../../images/img/cases/cases4.jpg')}>
+              <picture className={css.cases__img}>
+                <source
+                  type="image/jpeg"
+                  srcSet={`${require('../../images/img/cases/cases4.jpg')} 1x, ${require('../../images/img/cases/cases4@2x.jpg')} 2x`}
+                />
+                <source
+                  type="image/webp"
+                  srcSet={`${require('../../images/img/cases/cases4.webp')} 1x, ${require('../../images/img/cases/cases4@2x.webp')} 2x`}
+                />
                 <img
-                  alt="Lorem ipsum dolor sit amet consectetur adipisicing!"
-                  src={require('../../images/img/home/people.jpg')}
+                  src={require('../../images/img/cases/cases4.jpg')}
+                  alt="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                  loading="lazy"
                 />
-              </a>
-            </div>
+              </picture>
+            </a>
+            <a href={require('../../images/img/cases/cases5.jpg')}>
+              <picture className={css.cases__img}>
+                <source
+                  type="image/jpeg"
+                  srcSet={`${require('../../images/img/cases/cases5.jpg')} 1x, ${require('../../images/img/cases/cases5@2x.jpg')} 2x`}
+                />
+                <source
+                  type="image/webp"
+                  srcSet={`${require('../../images/img/cases/cases5.webp')} 1x, ${require('../../images/img/cases/cases5@2x.webp')} 2x`}
+                />
+                <img
+                  src={require('../../images/img/cases/cases5.jpg')}
+                  alt="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                  loading="lazy"
+                />
+              </picture>
+            </a>
+            <a href={require('../../images/img/cases/cases6.jpg')}>
+              <picture className={css.cases__img}>
+                <source
+                  type="image/jpeg"
+                  srcSet={`${require('../../images/img/cases/cases6.jpg')} 1x, ${require('../../images/img/cases/cases6@2x.jpg')} 2x`}
+                />
+                <source
+                  type="image/webp"
+                  srcSet={`${require('../../images/img/cases/cases6.webp')} 1x, ${require('../../images/img/cases/cases6@2x.webp')} 2x`}
+                />
+                <img
+                  src={require('../../images/img/cases/cases6.jpg')}
+                  alt="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                  loading="lazy"
+                />
+              </picture>
+            </a>
           </LightGallery>
         </div>
       </section>

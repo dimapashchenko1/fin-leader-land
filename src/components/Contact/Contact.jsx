@@ -37,8 +37,7 @@ function Contact() {
           <form
             className={css.form}
             name="contact"
-            method="POST"
-            data-netlify="true"
+            netlify
             onSubmit={handleSubmit(onSubmit)}
           >
             <div className={css.form__item}>
