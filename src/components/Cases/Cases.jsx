@@ -27,24 +27,15 @@ function Cases() {
             speed={500}
             plugins={[lgThumbnail, lgZoom]}
           >
-            <ul>
-              <li>
-                <a href={require('../../images/img/home/blog.jpg')}>
-                  <img
-                    alt="img1"
-                    src={require('../../images/img/home/blog.jpg')}
-                  />
-                </a>
-              </li>
-              <li>
-                <a href={require('../../images/img/home/people.jpg')}>
-                  <img
-                    alt="img2"
-                    src={require('../../images/img/home/people.jpg')}
-                  />
-                </a>
-              </li>
-            </ul>
+            <a href={require('../../images/img/home/blog.jpg')}>
+              <img alt="img1" src={require('../../images/img/home/blog.jpg')} />
+            </a>
+            <a href={require('../../images/img/home/people.jpg')}>
+              <img
+                alt="img2"
+                src={require('../../images/img/home/people.jpg')}
+              />
+            </a>
           </LightGallery>
         </div>
       </section>
