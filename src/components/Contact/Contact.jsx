@@ -6,8 +6,10 @@ import svg from '../../images/svg/sprite.svg';
 function Contact() {
   const {
     register,
+    handleSubmit,
     formState: { errors },
   } = useForm();
+  const onSubmit = data => console.log(data);
   console.log(errors);
 
   return (
@@ -20,8 +22,8 @@ function Contact() {
             className={css.form}
             name="contact"
             data-netlify="true"
-            onSubmit="submit"
             method="post"
+            onSubmit={handleSubmit(onSubmit) && 'submit'}
           >
             <input type="hidden" name="form-name" value="contact" />
             <div className={css.form__item}>
