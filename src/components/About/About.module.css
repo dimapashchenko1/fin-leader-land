@@ -1,0 +1,46 @@
+.about {
+    
+
+}
+.about__img {
+    height: 220px;
+}
+.about__wrapper {
+    height: 562px;
+    padding: 40px 30px;
+    background-color: var(--green-color);
+}
+.about__text {
+    font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 8px;
+}
+.about__title {
+    font-weight: 300;
+        font-size: 38px;
+        line-height: 48px;
+        margin-bottom: 24px;
+}
+.about__desc {
+    font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 24px;
+}
+.about__btn {
+    width: 158px;
+        height: 47px;
+    
+        border: 1px solid var(--white-color);
+        border-radius: 5px;
+    font-size: 16px;
+        line-height: 26px;
+        background-color: var(--green-color);
+        transition: var(--transition);
+
+}
+.about__btn:hover {
+    background-color: var(--white-color);
+    color: var(--green-color);
+    transition: var(--transition);
+        cursor: pointer;
+}

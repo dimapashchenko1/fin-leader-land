@@ -1,0 +1,46 @@
+
+.blog__img {
+height: 247px;
+padding: 0;
+}
+.blog__info{
+    background-color: var(--blue-color);
+    padding: 40px 40px 40px 20px;
+}
+.blog__text {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+
+.blog__title {
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 48px;
+    margin-bottom: 24px;
+}
+
+.blog__desc {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 24px;
+}
+
+.blog__btn {
+    width: 158px;
+    height: 47px;
+    border: 1px solid var(--white-color);
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 26px;
+    background-color: var(--blue-color);
+    transition: var(--transition);
+
+}
+
+.blog__btn:hover {
+    background-color: var(--white-color);
+    color: var(--blue-color);
+    transition: var(--transition);
+    cursor: pointer;
+}

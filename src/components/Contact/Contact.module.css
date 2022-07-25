@@ -1,0 +1,90 @@
+.contact{
+
+}
+.contact__info{
+    padding: 40px 20px;
+}
+.contact__img {
+    height: 220px;
+}
+
+.contact__title {
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 48px;
+    color: var(--grey-color);
+}
+.form__item {
+        padding-top: 30px;
+        position: relative;
+}
+
+.form__svg {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+
+.form__label {
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    display: block;
+    transition: top 0.5s;
+        color: var(--grey-color);
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    height: 40px;
+    margin: auto;
+    border: 1px solid #ccc;
+    color: var(--grey-color);
+  }
+
+.form__input:focus{
+    outline: none;
+    transition-duration: 0.3s;
+    box-shadow: none;
+    padding-left: 5px;
+}
+
+.form{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+
+}
+.form__error {
+    color: red;
+    text-align: left;
+    font-size: 12px;
+    display: block;
+    margin-top: 3px;
+    display: none;
+    position: relative;
+    padding-left: 24px;
+}
+input:valid:not(:placeholder-shown)+.form__error {
+    display: block;
+}
+
+.form__btn {
+    width: 280px;
+        height: 42px;
+        background-color: var(--green-color);
+        border-radius: 5px;
+        color: var(--white-color);
+        border-color: var(--green-color);
+        margin-top: 40px;
+}
+.form__btn:hover {
+    background-color: var(--white-color);
+    color: var(--green-color);
+}
+
+

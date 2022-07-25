@@ -1,0 +1,36 @@
+
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery.css');
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lg-zoom.css');
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lg-video.css');
+
+.cases{
+}
+
+.cases__info {
+    height: 562px;
+    padding: 40px 30px;
+    text-align: center;
+    
+}
+
+.cases__text {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 8px;
+    color: var(--grey-color);
+}
+
+.cases__title {
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 48px;
+    margin-bottom: 24px;
+    color: var(--grey-color);
+}
+
+.cases__desc {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 24px;
+    color: var(--grey-color);
+}
