@@ -23,7 +23,7 @@ function Contact() {
             name="contact"
             data-netlify="true"
             method="post"
-            onSubmit={handleSubmit(onSubmit) && 'submit'}
+            onSubmit={handleSubmit(onSubmit)}
           >
             <input type="hidden" name="form-name" value="contact" />
             <div className={css.form__item}>
