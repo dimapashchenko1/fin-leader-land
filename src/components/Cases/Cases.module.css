@@ -66,11 +66,11 @@
   .cases__info {
     padding: 80px 30px 40px 30px;
   }
-   .cases__gallery {
-       padding-left: 30px;
-       padding-right: 30px;
-       padding-bottom: 80px;
-   }
+  .cases__gallery {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 80px;
+  }
 }
 
 .cases__grid {

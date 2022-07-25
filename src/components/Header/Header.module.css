@@ -1,5 +1,4 @@
 header {
-  
   position: fixed;
   top: 0;
   left: 0;
@@ -9,36 +8,34 @@ header {
 }
 @media (max-width: 767px) {
   header {
-      flex-direction: column;
-      align-items: center;
-        text-align: center;
-        justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     height: 120px;
   }
-    .logo {
-      margin-bottom: 14px;
-  
-    }
-    .nav__link{
-      font-size: 16px;
-        line-height: 26px;
-    }
+  .logo {
+    margin-bottom: 14px;
+  }
+  .nav__link {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 
 @media (min-width: 768px) {
   header {
     height: 70px;
-      align-items: center;
-      text-align: center;
-      justify-content:space-between;
-      padding-left: 30px;
-      padding-right: 30px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
   }
-    .nav__link {
-      font-size: 18px;
-        line-height: 28px;
-    }
-  
+  .nav__link {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 .nav__link {
   font-size: 18px;
@@ -50,9 +47,7 @@ header {
   align-items: center;
   text-align: center;
   filter: opacity(90%);
-    transition: var(--transition);
-    
-  
+  transition: var(--transition);
 }
 
 .logo:hover {
@@ -85,28 +80,30 @@ header {
 
 .nav__item:not(:last-child) {
   margin-right: 12px;
-  
 }
 
 .nav__item:not(:last-child) {
-    margin-right: 12px;
-
+  margin-right: 12px;
 }
-.nav__link::before{
-    content: "";
-      position: absolute;
-      height: 3px;
-      bottom: -4px;
-      left: 0;
-      background-color: var(--green-color);
-      visibility: hidden;
-      width: 0;
-      transition: all 0.3s ease-in-out 0s;
-      z-index: 1000;
+.nav__link::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--green-color);
+  visibility: hidden;
+  width: 0;
+  transition: all 0.3s ease-in-out 0s;
+  z-index: 1000;
 }
-.nav__link:hover, .nav__item:hover>.nav__link::before, .nav__link:focus, .nav__link:hover::before, .nav__link:active {
-    color: white;
-      visibility: visible;
-      width: 100%;
-      transition: all 0.3s ease-in-out 0s;
+.nav__link:hover,
+.nav__item:hover > .nav__link::before,
+.nav__link:focus,
+.nav__link:hover::before,
+.nav__link:active {
+  color: white;
+  visibility: visible;
+  width: 100%;
+  transition: all 0.3s ease-in-out 0s;
 }

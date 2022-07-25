@@ -1,11 +1,31 @@
 import logo from '../../images/img/logo.png';
 import css from './Header.module.css';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { createRef, useEffect } from 'react';
 
 function Header() {
+  const refComponent = createRef();
+  useEffect(() => {}, [refComponent]);
+
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 50 ||
+      document.documentElement.scrollTop > 50
+    ) {
+      document.getElementById('header').style.backgroundColor =
+        'var(--bg-color)';
+    } else {
+      document.getElementById('header').style.backgroundColor = 'initial';
+    }
+  }
+
   return (
     <>
-      <header className={css.header}>
+      <header ref={refComponent} className={css.header} id="header">
         <a className={css.logo} href="/">
           <img className={css.logo__img} src={logo} alt="logo" />
           <p className={css.logo__text}>
@@ -17,7 +37,9 @@ function Header() {
           <ul className={css.nav__list}>
             <li className={css.nav__item}>
               <AnchorLink
-                offset={() => 70}
+                offset={() =>
+                  refComponent.current.getBoundingClientRect().height
+                }
                 className={css.nav__link}
                 href="#home"
               >
@@ -26,7 +48,9 @@ function Header() {
             </li>
             <li className={css.nav__item}>
               <AnchorLink
-                offset={() => 70}
+                offset={() =>
+                  refComponent.current.getBoundingClientRect().height
+                }
                 className={css.nav__link}
                 href="#about"
               >
@@ -35,7 +59,9 @@ function Header() {
             </li>
             <li className={css.nav__item}>
               <AnchorLink
-                offset={() => 70}
+                offset={() =>
+                  refComponent.current.getBoundingClientRect().height
+                }
                 className={css.nav__link}
                 href="#cases"
               >
@@ -44,7 +70,9 @@ function Header() {
             </li>
             <li className={css.nav__item}>
               <AnchorLink
-                offset={() => 70}
+                offset={() =>
+                  refComponent.current.getBoundingClientRect().height
+                }
                 className={css.nav__link}
                 href="#blog"
               >
@@ -53,7 +81,9 @@ function Header() {
             </li>
             <li className={css.nav__item}>
               <AnchorLink
-                offset={() => 70}
+                offset={() =>
+                  refComponent.current.getBoundingClientRect().height
+                }
                 className={css.nav__link}
                 href="#contact"
               >

@@ -10,9 +10,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--white-color);
   font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    overflow-x: hidden;
+  font-size: 18px;
+  line-height: 28px;
+  overflow-x: hidden;
 }
 
 code {
