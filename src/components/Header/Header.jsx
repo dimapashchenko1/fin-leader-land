@@ -1,5 +1,6 @@
 import logo from '../../images/img/logo.png';
 import css from './Header.module.css';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 function Header() {
   return (
@@ -15,29 +16,49 @@ function Header() {
         <nav className={css.nav}>
           <ul className={css.nav__list}>
             <li className={css.nav__item}>
-              <a className={css.nav__link} href="#home">
+              <AnchorLink
+                offset={() => 70}
+                className={css.nav__link}
+                href="#home"
+              >
                 Home
-              </a>
+              </AnchorLink>
             </li>
             <li className={css.nav__item}>
-              <a className={css.nav__link} href="#about">
+              <AnchorLink
+                offset={() => 70}
+                className={css.nav__link}
+                href="#about"
+              >
                 About
-              </a>
+              </AnchorLink>
             </li>
             <li className={css.nav__item}>
-              <a className={css.nav__link} href="#cases">
+              <AnchorLink
+                offset={() => 70}
+                className={css.nav__link}
+                href="#cases"
+              >
                 Cases
-              </a>
+              </AnchorLink>
             </li>
             <li className={css.nav__item}>
-              <a className={css.nav__link} href="#blog">
+              <AnchorLink
+                offset={() => 70}
+                className={css.nav__link}
+                href="#blog"
+              >
                 Blog
-              </a>
+              </AnchorLink>
             </li>
             <li className={css.nav__item}>
-              <a className={css.nav__link} href="#contact">
+              <AnchorLink
+                offset={() => 70}
+                className={css.nav__link}
+                href="#contact"
+              >
                 Contact
-              </a>
+              </AnchorLink>
             </li>
           </ul>
         </nav>
