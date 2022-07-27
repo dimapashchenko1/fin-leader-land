@@ -1,6 +1,4 @@
 @media (min-width: 320px) {
-  .contact {
-  }
   .contact__box {
     background-image: url('../../images/img/home/contact.jpg');
     background-image: -webkit-image-set(
@@ -84,14 +82,11 @@
     font-size: 12px;
     display: block;
     margin-top: 3px;
-    display: none;
     position: relative;
     padding-left: 24px;
   }
 
-  input:valid:not(:placeholder-shown) + .form__error {
-    display: block;
-  }
+  
 
   .form__btn {
     width: 100%;

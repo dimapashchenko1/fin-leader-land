@@ -2,15 +2,24 @@ import css from './Contact.module.css';
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import svg from '../../images/svg/sprite.svg';
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from 'yup';
+
+const schema = yup.object().shape({
+  email: yup.string().email().required(),
+  password: yup.string().required(),
+});
 
 function Contact() {
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm();
-  const onSubmit = data => console.log(data);
-  console.log(errors);
+  } = useForm({ resolver: yupResolver(schema) });
+
+  const onSubmit = (form) => {
+    console.log(form);
+  };
 
   return (
     <>
@@ -21,9 +30,8 @@ function Contact() {
           <form
             className={css.form}
             name="contact"
-            data-netlify="true"
-            method="post"
-            onSubmit={handleSubmit(onSubmit)}
+            method="POST"
+            onSubmit={handleSubmit(onSubmit) && "submit"}
           >
             <input type="hidden" name="form-name" value="contact" />
             <div className={css.form__item}>
@@ -33,10 +41,12 @@ function Contact() {
               <input
                 className={css.form__input}
                 id="name"
+                name='name'
                 type="text"
-                placeholder=""
-                {...register('Name', { required: true, min: 1, maxLength: 80 })}
-              />
+                placeholder=' '
+                {...register('name')}/>
+                
+                
             </div>
 
             <div className={css.form__item}>
@@ -45,21 +55,20 @@ function Contact() {
               </label>
               <input
                 className={css.form__input}
+                required
                 id="email"
+                name='email'
                 type="email"
-                placeholder=""
-                {...register('Email', {
-                  required: true,
-                  min: 3,
-                  pattern: /^\S+@\S+$/i,
-                })}
+                placeholder=' '
+                {...register('email')}
               />
-              <span className={css.form__error}>
+              {errors.email?.message && <span className={css.form__error}>
                 <svg className={css.form__svg}>
                   <use href={svg + '#warning'}></use>
                 </svg>
                 This is a required field
-              </span>
+              </span>}
+              
             </div>
             <button className={css.form__btn} type="submit">
               Send
