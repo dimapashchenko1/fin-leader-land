@@ -32,6 +32,7 @@ function Contact() {
             name="contact"
             method="POST"
             onSubmit={handleSubmit(onSubmit) && "submit"}
+            
           >
             <input type="hidden" name="form-name" value="contact" />
             <div className={css.form__item}>
